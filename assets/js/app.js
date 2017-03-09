@@ -26,7 +26,7 @@ var rollerCoaster = function() {
 var waitTime = function( person ) {
 	// If active = false, wait time is INFINITE.
 	// Else if active = true:
-		// Get the indexOf() the person clicked.
+		// Get the indexOf() the person clicked and store it in a local variable.
 		// Divide it by 10, Math.floor it, add 1.
 			// If it = 1:
 				// Display timer countdown.
@@ -55,5 +55,9 @@ var waitTime = function( person ) {
 			// Sets button color to GREEN.
 
 // Clicking any person in line:
-	// Each index in the LINE array must be a button. (Do I need to make them objects so I can generate key value pairs such as images to be displayed, etc.?)
+	// Each index in the LINE array must be a button.
+		// (Do I need to make them objects so I can generate key value pairs such as images to be displayed, etc.?)
+		// For starters, just make each person's button display their number from the array.
+		// Then you can make each button a different (random) color.
+		// Then you can swap those out for images of people but keep them as buttons to be clicked.
 	// Calls waitTime() for that person.
