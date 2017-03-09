@@ -14,7 +14,7 @@ var rollerCoaster = function() {
 	// Start 10-second timer. (This is the length of the ride.)
 
 	// Halfway through ride (when 5 seconds remain on countdown timer): If line.length < 11:
-		// Add a random quantity of people (between x and y) to the end of the LINE array.
+		// Add a random quantity of people (between min and max) to the end of the LINE array.
 		// The numbers added should resume incrementing from the last number currently in the LINE array.
 
 	// Wait until timer == 0.  Then:
