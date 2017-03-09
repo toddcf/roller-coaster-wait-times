@@ -9,7 +9,27 @@ var active = false;
 
 // Function to handle roller coaster operation:
 var rollerCoaster = function() {
+	// Remove the first ten people from the LINE array.
 
+	// Start 10-second timer. (This is the length of the ride.)
+
+	// If line.length < 11:
+		// Add a random quantity of people (between x and y) to the end of the LINE array.
+		// The numbers added should resume incrementing from the last number currently in the LINE array.
+
+	// Wait until timer == 0.  Then:
+		// If timer == 0 && active = true, call rollerCoaster() again. (If active = false, do nothing. The ride stops.)
+};
+
+// Function to calculate wait times:
+var waitTime = function( person ) {
+	// Get the indexOf() the person clicked.
+	// Divide it by 10, Math.floor it, add 1.
+		// If it = 1:
+			// Display timer countdown.
+		// If it > 1:
+			// Multiply it by 10 seconds + the timer countdown (in real time).
+			// Display it.
 };
 
 // EVENT HANDLERS
@@ -30,3 +50,6 @@ var rollerCoaster = function() {
 			// Sets active = false. Now rollerCoaster() will NOT be called at the end of the current ride.
 			// Changes button text to "Start Ride".
 			// Sets button color to GREEN.
+
+// Clicking any person in line:
+	// Calls waitTime() for that person.
