@@ -13,23 +13,26 @@ var rollerCoaster = function() {
 
 	// Start 10-second timer. (This is the length of the ride.)
 
-	// If line.length < 11:
+	// Halfway through ride (when 5 seconds remain on countdown timer): If line.length < 11:
 		// Add a random quantity of people (between x and y) to the end of the LINE array.
 		// The numbers added should resume incrementing from the last number currently in the LINE array.
 
 	// Wait until timer == 0.  Then:
-		// If timer == 0 && active = true, call rollerCoaster() again. (If active = false, do nothing. The ride stops.)
+		// If timer == 0 && active = true, call rollerCoaster() again.
+		// (If active = false, do nothing. The ride stops.)
 };
 
 // Function to calculate wait times:
 var waitTime = function( person ) {
-	// Get the indexOf() the person clicked.
-	// Divide it by 10, Math.floor it, add 1.
-		// If it = 1:
-			// Display timer countdown.
-		// If it > 1:
-			// Multiply it by 10 seconds + the timer countdown (in real time).
-			// Display it.
+	// If active = false, wait time is INFINITE.
+	// Else if active = true:
+		// Get the indexOf() the person clicked.
+		// Divide it by 10, Math.floor it, add 1.
+			// If it = 1:
+				// Display timer countdown.
+			// If it > 1:
+				// Multiply it by 10 seconds + the timer countdown (in real time).
+				// Display it.
 };
 
 // EVENT HANDLERS
@@ -52,4 +55,5 @@ var waitTime = function( person ) {
 			// Sets button color to GREEN.
 
 // Clicking any person in line:
+	// Each index in the LINE array must be a button. (Do I need to make them objects so I can generate key value pairs such as images to be displayed, etc.?)
 	// Calls waitTime() for that person.
